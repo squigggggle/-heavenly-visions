@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string[] Tour1 = new string[10];
+            string[] Tour2 = new string[10];
+            string[] Tour3 = new string[10];
+
         }
     }
 }
