@@ -25,11 +25,25 @@ namespace heavenly_visions
 
         public static void addName()
         {
-            string userinput = "";
-            Console.WriteLine("Please enter your first name");
-            userinput= Console.ReadLine();
-            Console.WriteLine("Hello " + userinput );
+            bool loop;
+            List<string> peopleAdd = new List<string>();
+            do
+            {
+                Console.Write("Please enter the full name e.g.(John Smith): ");
+                peopleAdd.Add(Console.ReadLine());
+                Console.WriteLine("Person added!\n");
+                Console.WriteLine("Would you like to add another person? [yes | no]");
+                string check = Console.ReadLine().ToLower();
+                if (check == "yes")
+                {
+                    loop = true;
+                }
+                else
+                {
+                    loop = false;
+                }
 
+            } while (loop);
 
         }
             
