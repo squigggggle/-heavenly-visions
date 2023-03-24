@@ -6,7 +6,7 @@ namespace heavenly_visions
     {
         static void Main(string[] args)
         {
-            Person person = new Person("name", 1);
+            
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
@@ -35,7 +35,10 @@ namespace heavenly_visions
                             Console.WriteLine("Person added!\n");
                             Console.WriteLine($"What tour is {name} on? e.g.(1 or 2...): ");
                             tourID = Convert.ToInt32(Console.ReadLine());
+                            Person person = new Person(name, tourID);
                             person.UserInput();
+                            AddCustomer.addName(name);
+                            AddCustomer.addTour(tourID);
                             Console.WriteLine("Would you like to add another person? [yes | no]");
                             string check = Console.ReadLine().ToLower();
                             if (check == "yes")

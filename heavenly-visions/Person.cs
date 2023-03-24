@@ -23,28 +23,7 @@ namespace heavenly_visions
 
         public virtual string UserInput() 
         {
-            bool loop;
-            do 
-            {
-                Console.Write("Please enter the full name e.g.(John Smith): ");
-                name = Console.ReadLine();
-                Console.WriteLine("Person added!\n");
-                Console.WriteLine($"What tour is {name} on? e.g.(1 or 2...): ");
-                tourID = Convert.ToInt32(Console.ReadLine());
-                AddCustomer.addName(name);
-                AddCustomer.addTour(tourID);
-                Console.WriteLine("Would you like to add another person? [yes | no]");
-                string check = Console.ReadLine().ToLower();
-                if (check == "yes")
-                {
-                    loop = true;
-                }
-                else
-                { 
-                    loop = false;
-                }
-
-            } while (loop);
+            Console.WriteLine(name + tourID);
             return name + tourID;
         }
     }
