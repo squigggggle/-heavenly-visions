@@ -8,7 +8,7 @@
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
-            int mainMenu = 0;
+            int mainMenu;
 
             do
             {
@@ -19,6 +19,7 @@
                 {
                     case 0:
                         //exit
+                        Console.WriteLine("Goodbye");
                         break;
                     case 1:
                         //enter user
