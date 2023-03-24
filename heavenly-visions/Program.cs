@@ -9,6 +9,7 @@
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
             int mainMenu = 0;
+
             do
             {
                 Console.Clear();
@@ -24,6 +25,10 @@
                         break;
                     case 2:
                         //view tours
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option, try again.");
+                        Console.ReadLine();
                         break;
                 }
             } while (mainMenu != 0);
