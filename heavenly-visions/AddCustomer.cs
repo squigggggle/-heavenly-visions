@@ -8,27 +8,30 @@ namespace heavenly_visions
 {
     public class AddCustomer
     {
-        private string firstName;
-        private string lastName;
+        private string userName;
+        private string tourSelection;
 
      
-     public AddCustomer(string firstName, string lastName) 
+     public AddCustomer(string userName, string tourSelection) 
         {
 
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.userName = userName;
+        this.tourSelection = tourSelection;
         
         }
 
-        public string FirstName { get => firstName; set => firstName = value; }
-        public string LastName { get => lastName; set => lastName = value; }
+        public string UserName { get => userName; set => userName = value; }
+        public string TourSelection { get => tourSelection; set => tourSelection = value; }
 
-        public static void addName()
+        public static void addName(string name)
         {
-            string userinput = "";
-            Console.WriteLine("Please enter your first name");
-            userinput= Console.ReadLine();
-            Console.WriteLine("Hello " + userinput );
+          List<string> userName = new List<string>();
+           
+            
+        }
+        public static void addTour(int tour) 
+        {
+          List<int> tourSelection = new List<int>();
 
 
         }
