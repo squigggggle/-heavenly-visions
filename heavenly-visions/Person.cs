@@ -21,7 +21,7 @@ namespace heavenly_visions
         public string Name { get => name; set => name = value; }
         public int TourID { get => tourID; set => tourID = value; }
 
-        public string UserInput() 
+        public virtual string UserInput() 
         {
             bool loop;
             do 

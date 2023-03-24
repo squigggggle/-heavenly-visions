@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Person person = new Person("name", 1);
+           
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
@@ -14,7 +14,6 @@
             {
                 Console.Clear();
                 Console.WriteLine("sample text");
-                Console.WriteLine(person.UserInput());
                 mainMenu = Convert.ToInt32(Console.ReadLine());
                 switch(mainMenu)
                 {
@@ -23,7 +22,7 @@
                         Console.WriteLine("Goodbye");
                         break;
                     case 1:
-                        person.UserInput();
+                        //enter user
                         break;
                     case 2:
                         //view tours
