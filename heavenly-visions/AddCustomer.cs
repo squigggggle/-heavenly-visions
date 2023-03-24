@@ -23,13 +23,13 @@ namespace heavenly_visions
         public string UserName { get => userName; set => userName = value; }
         public string TourSelection { get => tourSelection; set => tourSelection = value; }
 
-        public static void addName()
+        public static void addName(string name)
         {
           List<string> userName = new List<string>();
            
             
         }
-        public static void addTour() 
+        public static void addTour(int tour) 
         {
           List<int> tourSelection = new List<int>();
 
