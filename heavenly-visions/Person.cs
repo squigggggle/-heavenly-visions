@@ -9,15 +9,30 @@ namespace heavenly_visions
 {
     public class Person
     {
-        public static void UserInput() 
+        private string name;
+        private int tourID;
+
+        public Person(string name, int tourID)
+        {
+            this.name = name;
+            this.tourID = tourID;
+        }
+
+        public string Name { get => name; set => name = value; }
+        public int TourID { get => tourID; set => tourID = value; }
+
+        public void UserInput() 
         {
             bool loop;
-            List<string> people = new List<string>();
             do 
             {
                 Console.Write("Please enter the full name e.g.(John Smith): ");
-                people.Add(Console.ReadLine());
+                name = Console.ReadLine();
                 Console.WriteLine("Person added!\n");
+                Console.WriteLine($"What tour is {name} on? e.g.(1 or 2...): ");
+                tourID = Convert.ToInt32(Console.ReadLine());
+                AddCustomer.addName(name);
+                AddCustomer.addTour(tourID);
                 Console.WriteLine("Would you like to add another person? [yes | no]");
                 string check = Console.ReadLine().ToLower();
                 if (check == "yes")
