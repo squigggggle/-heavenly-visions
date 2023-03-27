@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-           
+         
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
@@ -22,7 +22,7 @@
                         Console.WriteLine("Goodbye");
                         break;
                     case 1:
-                        //enter user
+                       
                         break;
                     case 2:
                         //view tours
@@ -33,6 +33,8 @@
                         break;
                 }
             } while (mainMenu != 0);
+
+           
         }
     }
 }
