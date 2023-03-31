@@ -10,6 +10,7 @@ namespace heavenly_visions
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
+            Map people = new Map();
             int mainMenu;
 
             do
@@ -30,6 +31,7 @@ namespace heavenly_visions
                         string name;
                         int tourID;
                         bool loop;
+                        
                         do
                         {
                             Console.Write("Please enter the full name e.g.(John Smith): ");
@@ -39,8 +41,7 @@ namespace heavenly_visions
                             tourID = Convert.ToInt32(Console.ReadLine());
                             Person person = new Person(name, tourID);
                             person.UserInput();
-                            AddCustomer.addName(name);
-                            AddCustomer.addTour(tourID);
+                            AddCustomer.addDetails(tourID, name, people);
                             Console.WriteLine("Would you like to add another person? [yes | no]");
                             string check = Console.ReadLine().ToLower();
                             if (check == "yes")
@@ -58,6 +59,8 @@ namespace heavenly_visions
                         break;
                     case 2:
                         //view tours
+                        AddCustomer.viewTour(people);
+                        Console.ReadLine();
                         break;
                     default:
                         Console.WriteLine("Invalid option, try again.");
