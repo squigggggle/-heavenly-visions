@@ -6,7 +6,7 @@ namespace heavenly_visions
     {
         static void Main(string[] args)
         {
-            
+
             string[] Tour1 = new string[10];
             string[] Tour2 = new string[10];
             string[] Tour3 = new string[10];
@@ -24,6 +24,8 @@ namespace heavenly_visions
                         Console.WriteLine("Goodbye");
                         break;
                     case 1:
+
+
                         //enter user
                         string name;
                         int tourID;
@@ -52,6 +54,7 @@ namespace heavenly_visions
 
                         } while (loop);
                         
+
                         break;
                     case 2:
                         //view tours
@@ -62,6 +65,8 @@ namespace heavenly_visions
                         break;
                 }
             } while (mainMenu != 0);
+
+           
         }
     }
 }

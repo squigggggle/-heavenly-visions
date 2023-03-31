@@ -26,16 +26,19 @@ namespace heavenly_visions
         public static void addName(string name)
         {
           List<string> userName = new List<string>();
-           
-            
+          userName.Add(name);
+            Console.WriteLine(name);
+
+
         }
-        public static void addTour(int tour) 
+        public static void addTour(int tourID) 
         {
           List<int> tourSelection = new List<int>();
-
-
+            tourSelection.Add(tourID);
+         Console.WriteLine(tourID);
         }
-            
+        
+               
 
     }
 }
