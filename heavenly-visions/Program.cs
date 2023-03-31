@@ -15,7 +15,7 @@ namespace heavenly_visions
             do
             {
                 Console.Clear();
-                Console.WriteLine("sample text");
+                Console.WriteLine("1: Enter User\n2: View Users\n0: Exit");
                 mainMenu = Convert.ToInt32(Console.ReadLine());
                 switch(mainMenu)
                 {

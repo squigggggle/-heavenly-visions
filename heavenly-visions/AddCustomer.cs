@@ -27,7 +27,6 @@ namespace heavenly_visions
         {
           List<string> userName = new List<string>();
           userName.Add(name);
-            Console.WriteLine(name);
 
 
         }
@@ -35,7 +34,6 @@ namespace heavenly_visions
         {
           List<int> tourSelection = new List<int>();
             tourSelection.Add(tourID);
-         Console.WriteLine(tourID);
         }
         
                
