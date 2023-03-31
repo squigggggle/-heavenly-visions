@@ -23,7 +23,8 @@ namespace heavenly_visions
 
         public virtual string UserInput() 
         {
-
+            Console.WriteLine(name + TourID);
+            return name + tourID;
         }
     }
 }
