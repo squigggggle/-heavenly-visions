@@ -58,6 +58,7 @@ namespace heavenly_visions
                         break;
                     case 2:
                         //view tours
+                        
                         break;
                     default:
                         Console.WriteLine("Invalid option, try again.");
@@ -67,6 +68,10 @@ namespace heavenly_visions
             } while (mainMenu != 0);
 
            
+        }
+        public static void viewTour()
+        {
+
         }
     }
 }
